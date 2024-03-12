@@ -6,7 +6,7 @@
 /*   By: lisriver <lisriver@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 10:52:47 by lisriver          #+#    #+#             */
-/*   Updated: 2023/12/29 17:58:16 by lisriver         ###   ########.fr       */
+/*   Updated: 2024/01/12 16:21:20 by lisriver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,4 +58,16 @@ int	ft_printf(const char *str, ...)
 	}
 	va_end(argument);
 	return (size);
+}
+int main ()
+{
+	int result;
+	int other;
+
+	result = ft_printf("Tester printf %x\n", 12);
+	other = printf("Tester printf %x\n", 12);
+
+	ft_printf("tamaño %d\n", result);
+	printf("tamaño %d\n", other);
+	return(0);
 }
